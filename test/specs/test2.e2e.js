@@ -1,7 +1,6 @@
 describe('Demo test', function () {
     it('My first test', async () => {
         browser.url('https://www.bestprice.vn/')
-        browser.pause(5000)
         await $('input[name="From"]').click();
         $$('input[placeholder="Mã sân bay, Tên sân bay, Tên thành phố..."]')[0].setValue("Han");
         await $$('.tt-highlight')[0].click();
